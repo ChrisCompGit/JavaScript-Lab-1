@@ -1,18 +1,18 @@
 const prompt = require ("prompt-sync")();
 
-const name = prompt ("Hi, what is your name? ");
-const price = parseInt (prompt ("Please enter the price of the item: "));
 const itemNumber = parseInt (prompt("Please enter the Item Number: "));
-const itemTitle = prompt ("Please enter the Item Name: ");
+const price = parseInt (prompt (`Please enter the price of Item Number ${itemNumber}: `));
+const itemTitle = prompt (`Please enter the Name of ${itemNumber}: `);
 const discountFigure = parseInt (prompt ("Please enter the % discount to be applied: "));
 
 const discountPercent = (discountFigure/100);
 const discountAmount = discountPercent*price;
 const reducedPrice = price-discountAmount;
 
-console.log(`${name}, the price of the item is: $${price}`);
-console.log("\n")
-console.log(`The discount to be applied to Item No. ${itemNumber} is ${discountFigure}% which is $${discountAmount}`);
-console.log("\n")
-console.log(`${itemTitle}'s new price is $${reducedPrice}`);
-console.log("\n")
+console.log("\n");
+console.log("**************CUSTOMER BILL *********************");
+console.log(`Product Code: ${itemNumber}`);
+console.log(`Product Title: ${itemTitle}`);
+console.log(`Original Price: $${price.toFixed(2)}`);
+console.log(`Discounted Amount: $${discountAmount.toFixed(2)}`);
+console.log(`Customer Pay Amount: $${reducedPrice.toFixed(2)}`);
