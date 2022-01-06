@@ -73,7 +73,7 @@ Lastly, the loan calculator must print out the following information below:
 
 **The calculations for calculating the monthly loan payments are as follows:**
 
--Get user loan amount
+- Get user loan amount
 If the user enters 5000, Then 5000 becomes the user loan amount.
 
 - Find the number of payments required on the loan. 
