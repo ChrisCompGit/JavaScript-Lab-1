@@ -66,10 +66,10 @@ After the user enters the aforementioned data, the web application would then ca
 
 Lastly, the loan calculator must print out the following information below:
 
-**Loan Amount**
-**Annual Interest Rate**
-**Loan term(in months)**
-**Monthly Payments**
+- **Loan Amount**
+- **Annual Interest Rate**
+- **Loan term(in months)**
+- **Monthly Payments**
 
 **The calculations for calculating the monthly loan payments are as follows:**
 
